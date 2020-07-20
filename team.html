@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Football Information Web App" />
+    <title>Chiggu App</title>
+    <!-- materialize css -->
+    <link rel="stylesheet" href="/css/materialize.min.css" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- manifest json -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#3ae374" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="#" />
+
+    <!-- icon homescreen apple devices -->
+    <link rel="apple-touch-icon" href="/img/icon-512x512.webp" />
+  </head>
+  <body>
+    <!--* navbar -->
+    <nav class="light-green darken-2" role="navigation">
+      <div class="nav-wrapper container">
+        <a href="index.html" class="brand-logo" id="logo-container">
+          Chiggu App
+        </a>
+        <a href="index.html" class="sidenav-trigger" data-target="nav-mobile"
+          ><i class="material-icons">arrow_back</i></a
+        >
+
+        <ul class="topnav right hide-on-med-and-down"></ul>
+        <ul class="sidenav" id="nav-mobile"></ul>
+      </div>
+    </nav>
+
+    <!-- *konten -->
+    <div class="container">
+      <h3 class="header center">SQUAD LIST</h3>
+      <div class="row">
+        <div class="col l12 m12 s12">
+          <div class="card">
+            <div class="card-content">
+              <div class="row" id="teamDetail">
+                <!-- isi konten team detail  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large light-green darken-2" id="save">
+        <i class="large material-icons">save</i>
+      </a>
+      <a
+        class="btn-floating btn-large light-green darken-2"
+        style="display: none;"
+        id="deleted"
+      >
+        <i class="large material-icons">delete</i>
+      </a>
+    </div>
+
+    <footer class="page-footer light-green darken-2">
+      <div class="footer-copyright center">
+        <div class="container">
+          Football Information Web App © 2020, IDCamp
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/materialize.min.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="js/idb.js"></script>
+    <script src="js/db.js"></script>
+    <script src="/js/activateswTeam.js"></script>
+  </body>
+</html>

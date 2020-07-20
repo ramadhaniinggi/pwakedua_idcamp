@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Football Information Web App" />
+    <title>Chiggu App</title>
+    <!-- materialize css -->
+    <link rel="stylesheet" href="/css/materialize.min.css" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- manifest json -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#3ae374" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="#" />
+
+    <!-- icon homescreen apple devices -->
+    <link rel="apple-touch-icon" href="/img/icon-512x512.png" />
+  </head>
+  <body>
+    <!--* navbar -->
+    <nav class="light-green darken-2" role="navigation">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo" id="logo-container">
+          Chiggu App
+        </a>
+        <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+
+        <ul class="topnav right hide-on-med-and-down"></ul>
+        <ul class="sidenav" id="nav-mobile"></ul>
+      </div>
+    </nav>
+
+    <!-- *konten -->
+    <div id="body-content"></div>
+
+    <footer class="page-footer light-green darken-2">
+      <div class="footer-copyright center">
+        <div class="container">
+          Football Information Web App © 2020, IDCamp
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/materialize.min.js"></script>
+    <script src="/js/nav.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="js/idb.js"></script>
+    <script src="js/db.js"></script>
+    <script src="/js/activatesw.js"></script>
+  </body>
+</html>
